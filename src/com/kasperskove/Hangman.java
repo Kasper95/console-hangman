@@ -9,15 +9,9 @@ public class Hangman {
         // game is passed through Prompter's constructor
         Prompter prompter = new Prompter(game);
 
-        prompter.displayProgress();
-
-        boolean isHit = prompter.promptForGuess();
-        if (isHit) {
-            System.out.println("We got a hit!");
-        } else {
-            System.out.println("Oops! That's a miss.");
+        while (game.getRemainingTries() > 0) {
+            prompter.displayProgress();
+            prompter.promptForGuess();
         }
-
-        prompter.displayProgress();
     }
 }
