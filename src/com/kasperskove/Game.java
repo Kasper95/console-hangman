@@ -29,4 +29,19 @@ public class Game {
         return isHit;
     }
 
+    public String getCurrentProgress(){
+        // gets the current game progress by returning guessed/un-guessed letter
+        String progress = "";
+        // goes through all letters in the answer and adds hits to display
+        for (char letter : answer.toCharArray()) {
+            char display = '-';
+            // if it's found, add to display
+            if (hits.indexOf(letter) != -1) {
+                display = letter;
+            }
+            // appends displays to progress string
+            progress += display;
+        }
+        return progress;
+    }
 }

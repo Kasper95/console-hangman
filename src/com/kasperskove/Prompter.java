@@ -25,4 +25,8 @@ public class Prompter {
         // that is not the Prompter's job, it's the Game's job. applyGuess returns a boolean (good to go!)
         return game.applyGuess(guess);
     }
+
+    public void displayProgress() {
+        System.out.printf("Try to solve: %s%n", game.getCurrentProgress());
+    }
 }
