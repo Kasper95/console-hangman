@@ -18,6 +18,10 @@ public class Game {
 
     public boolean applyGuess(char letter){
 
+        if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
+            throw new IllegalArgumentException(letter + " has already been guessed");
+        }
+
         // hit if the letter is part of the answer String
         boolean isHit = answer.indexOf(letter) != -1;
 
