@@ -16,8 +16,11 @@ public class Game {
     }
 
     public boolean applyGuess(char letter){
+
+        // hit if the letter is part of the answer String
         boolean isHit = answer.indexOf(letter) != -1;
 
+        // if is hit, add that letter to the 'hits' list else +='misses' list
         if (isHit) {
             hits += letter;
         } else {
