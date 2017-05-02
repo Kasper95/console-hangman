@@ -16,20 +16,24 @@ public class Prompter {
     }
 
     public boolean promptForGuess() {
-        // initializing scanner for console input
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a letter:  ");
-        String guessInput = scanner.nextLine();
-        // getting char from String guessInput
-        char guess = guessInput.charAt(0);
-        // checking if guess matches or not using applyGuess method from Game class
-        // that is not the Prompter's job, it's the Game's job. applyGuess returns a boolean (good to go!)
-        boolean isHit = false;
-        try { isHit = game.applyGuess(guess);
-        } catch (IllegalArgumentException iae) {
-            System.out.println(iae.getMessage());
-        }
 
+        Scanner scanner = new Scanner(System.in);
+        boolean isHit = false;
+        boolean isAcceptableCharacter = false;
+
+        do {
+            System.out.print("Enter a letter:  ");
+            String guessInput = scanner.nextLine();
+            // getting char from String guessInput
+            // checking if guess matches or not using applyGuess method from Game class
+            // that is not the Prompter's job, it's the Game's job. applyGuess returns a boolean (good to go!)
+            try {
+                isHit = game.applyGuess(guessInput);
+                isAcceptableCharacter = true;
+            } catch (IllegalArgumentException iae) {
+                System.out.printf("%s.  Please try again. %n", iae.getMessage());
+            }
+        } while (! isAcceptableCharacter);
         return isHit;
     }
 

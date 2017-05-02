@@ -11,16 +11,27 @@ public class Game {
     public static final int MAX_MISSES = 7; // using constant, max number of misses won't change
 
     public Game(String answer) {
-        this.answer = answer;
+        this.answer = answer.toLowerCase();
         hits = "";
         misses = "";
     }
 
-    public boolean applyGuess(char letter){
-
+    private char normalizeGuess(char letter) {
+        // ensure character is a letter
+        if(! Character.isLetter(letter)){
+            throw new IllegalArgumentException("A letter is required");
+        }
+        // now make it lowercase to avoid silliness ;)
+        letter = Character.toLowerCase(letter);
         if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
             throw new IllegalArgumentException(letter + " has already been guessed");
         }
+        return letter;
+    }
+
+    public boolean applyGuess(char letter){
+
+        letter = normalizeGuess(letter);
 
         // hit if the letter is part of the answer String
         boolean isHit = answer.indexOf(letter) != -1;
@@ -32,6 +43,14 @@ public class Game {
             misses += letter;
         }
         return isHit;
+    }
+
+    public boolean applyGuess(String letters){
+        if (letters.length() == 0) {
+            throw new IllegalArgumentException("No letter found");
+        }
+
+        return applyGuess(letters.charAt(0));
     }
 
     public String getCurrentProgress(){

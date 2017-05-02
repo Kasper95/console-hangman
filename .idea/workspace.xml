@@ -38,8 +38,8 @@
       <file leaf-file-name="Prompter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kasperskove/Prompter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="227">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
               <folding>
                 <element signature="e#227#228#0" expanded="true" />
                 <element signature="e#259#260#0" expanded="true" />
@@ -51,12 +51,14 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kasperskove/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="85" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+            <state relative-caret-position="315">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding>
+                <element signature="docComment;class#Game#0" expanded="false" />
+                <element signature="method#Game#0;class#Game#0" expanded="false" />
+                <element signature="method#normalizeGuess#0;class#Game#0" expanded="false" />
+                <element signature="method#applyGuess#0;class#Game#0" expanded="false" />
                 <element signature="method#getCurrentProgress#0;class#Game#0" expanded="false" />
-                <element signature="e#1525#1526#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,9 +92,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="604" />
+    <option name="x" value="879" />
     <option name="y" value="23" />
-    <option name="width" value="762" />
+    <option name="width" value="487" />
     <option name="height" value="677" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -417,8 +419,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="604" y="23" width="762" height="677" extended-state="0" />
-    <editor active="false" />
+    <frame x="879" y="23" width="487" height="677" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -428,7 +430,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -478,20 +480,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kasperskove/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="85" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+        <state relative-caret-position="315">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
           <folding>
+            <element signature="docComment;class#Game#0" expanded="false" />
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#normalizeGuess#0;class#Game#0" expanded="false" />
+            <element signature="method#applyGuess#0;class#Game#0" expanded="false" />
             <element signature="method#getCurrentProgress#0;class#Game#0" expanded="false" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kasperskove/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="227">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding>
             <element signature="e#227#228#0" expanded="true" />
             <element signature="e#259#260#0" expanded="true" />
